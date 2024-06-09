@@ -9,6 +9,10 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ["var(--font-poppins)"],
+        serif: ["var(--font-bree-serif)"],
+      },
+      spacing: {
+        100: "28rem",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

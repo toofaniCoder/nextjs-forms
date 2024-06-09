@@ -1,5 +1,10 @@
-import { Inter, Poppins } from "next/font/google";
+import { Bree_Serif, Poppins } from "next/font/google";
 import "./globals.css";
+const bree_serif = Bree_Serif({
+  subsets:[ "latin"],
+  weight: "400",
+  variable: "--font-bree-serif",
+});
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -13,7 +18,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html className={poppins.variable} lang="en">
+    <html className={`${poppins.variable} ${bree_serif.variable}`} lang="en">
       <body>{children}</body>
     </html>
   );
